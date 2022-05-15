@@ -5,7 +5,13 @@ import GridIcon from '../../img/icon-grid.png';
 import LineIcon from '../../img/icon-list.png';
 import './LikesPage.scss';
 
+import useLikes from './Logic/LikesLogic';
+
 const LikesPage = () => {
+  const [likedProducts] = useLikes();
+
+  console.log(likedProducts);
+
   return (
     <div className="likespage">
       <Feedback />
