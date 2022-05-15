@@ -1,15 +1,9 @@
 import { useState, useEffect } from 'react';
 import CoreAPI from '../../../API/CoreAPI';
+import config from '../../../API/AuthorizedConfig';
 
 const useLikes = () => {
   const [likedProducts, setLikedProducts] = useState(() => []);
-  const [config, setConfig] = useState(() => {
-    return {
-      headers: {
-        Authorization: 'Bearer ' + localStorage.getItem('token'),
-      },
-    };
-  });
 
   useEffect(() => {
     getLikedProducts();
