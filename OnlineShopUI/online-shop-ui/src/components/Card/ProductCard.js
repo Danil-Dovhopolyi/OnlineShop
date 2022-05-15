@@ -1,6 +1,7 @@
 import React from 'react';
 import './ProductCard.scss';
 import ProductBg from '../../img/product-img.png';
+import LikeButton from '../../routers/LikesPage/components/LikeButton';
 
 const ProductCard = (props) => {
   return (
@@ -17,6 +18,7 @@ const ProductCard = (props) => {
           <strong>{props.price} USD</strong>
         </p>
         <button>Buy now</button>
+        <LikeButton />
       </div>
     </div>
   );
