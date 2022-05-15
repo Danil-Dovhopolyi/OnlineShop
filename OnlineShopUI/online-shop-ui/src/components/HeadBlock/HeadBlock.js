@@ -7,6 +7,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import Card from '../../img/icon-card.png';
+import Like from '../../img/icon-like.png';
 
 const HeadBlock = (props) => {
   const [anchorElement, setAnchorElement] = useState(null);
@@ -57,6 +58,9 @@ const HeadBlock = (props) => {
         <Login />
         <button className="openCartButton" onClick={props.onClickCart}>
           <img src={Card} alt="card" />
+        </button>
+        <button className="openLikePage">
+          <img src={Like} alt="like" />
         </button>
       </div>
     </div>

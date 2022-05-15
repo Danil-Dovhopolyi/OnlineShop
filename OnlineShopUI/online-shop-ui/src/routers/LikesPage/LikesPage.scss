@@ -1,0 +1,26 @@
+@import '../../Helper/ListColorVariable.scss';
+@import '../../Helper/Mixins.scss';
+
+.btn {
+  @include CartButtons;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  width: 50%;
+}
+.likespage {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 34%;
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    gap: 10%;
+  }
+}
